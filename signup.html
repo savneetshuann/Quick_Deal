@@ -318,9 +318,11 @@
 			var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 			
 			
+			
 				if(first_name == ""){
 					$('#first_nameLabel').html('<span class="error"> Please enter your firstname</span>');
 					$('#first_nameLabel').show();
+					return ;
 				} else{
 					$('#first_nameLabel').hide();				
 				}
@@ -328,6 +330,7 @@
 				if(last_name == ""){
 					$('#last_nameLabel').html('<span class="error"> Please enter your lastname</span>');
 					$('#last_nameLabel').show();
+					return ;
 				} else{
 					$('#last_nameLabel').hide();
 				}
@@ -335,10 +338,12 @@
 				if(email == ""){
 					$('#emailLabel').html('<span class="error"> Please enter your email id</span>');
 					$('#emailLabel').show();
+					return ;
 				}				
 				else if(!emailReg.test(email)){
 					$('#emailLabel').html('<span class="error"> Please enter a valid email address</span>');
 					$('#emailLabel').show();
+					return ;
 				}else{
 					$('#emailLabel').hide();
 				
@@ -347,10 +352,12 @@
 				if(email_confirm == ""){
 					$('#email_confirmLabel').html('<span class="error"> Please enter your confirm email id</span>');
 					$('#email_confirmLabel').show();
+					return ;
 				}				
 				else if(!emailReg.test(email_confirm)){
 					$('#email_confirmLabel').html('<span class="error"> Please enter a valid email address</span>');
 					$('#email_confirmLabel').show();
+					return ;
 				}else{
 					$('#email_confirmLabel').hide();				
 				}
@@ -358,6 +365,7 @@
 				if(mobile == ""){
 					$('#mobileLabel').html('<span class="error"> Please enter your mobile number</span>');
 					$('#mobileLabel').show();
+					return ;
 				} else{
 					$('#mobileLabel').hide();
 				}
@@ -365,6 +373,7 @@
 				if(dob == ""){
 					$('#dobLabel').html('<span class="error"> Please enter your dob</span>');
 					$('#dobLabel').show();
+					return ;
 				} else{
 					$('#dobLabel').hide();
 				}
@@ -372,6 +381,7 @@
 				if(password == ""){
 					$('#passwordLabel').html('<span class="error"> Please enter your password</span>');
 					$('#passwordLabel').show();
+					return ;
 				} else{
 					$('#passwordLabel').hide();				
 				}
@@ -379,9 +389,13 @@
 				if(password_confirm == ""){
 					$('#password_confirmLabel').html('<span class="error"> Please enter your confirm password</span>');
 					$('#password_confirmLabel').show();
+					return ;
 				} else{
 					$('#password_confirmLabel').hide();				
 				}
+				
+				alert("Successfully Signed Up \n\n You can login now!!");
+				location.href = 'login.html';
 						
 				
 		}
