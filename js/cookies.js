@@ -13,7 +13,7 @@ function setProductCookie(title, imageLink, price){
 		document.cookie = "price=" + price;
 }
 
-function setCookie(cname, cvalue, exdays) {
+function setCookie2(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
   var expires = "expires="+d.toUTCString();
