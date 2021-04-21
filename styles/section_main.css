@@ -81,10 +81,12 @@
 /* ------- footer -------*/
 
 #footer {
-	background-color: #f9f9f9;
+	background-color: #0046be
+
 }
 
 #footer_nav, #footer_social{
+
 	text-align: center;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
@@ -98,19 +100,19 @@
 	font-weight: bold;
 	transition: .3s;
 }
-#footer_nav a:hover{background-color: rgb(224, 0, 0);color:white !important;}
+#footer_nav a:hover{background-color: darkgrey;color:white !important;}
 #footer_social a:hover{transform: scale(1.2);}
 #footer a:link, #footer a:visited, .form_container a:link, #footer a:visited{
 	font-size: .8em;
 	text-decoration: none;
-	color: #777777;
+	color:white;
 }
 
 .active:link, .active:visited{background: darkgrey;color: black !important;}
 
 #footer .title{
 	border-top: solid 1px #e3e3e3;
-	color: #777777;text-align:center;}
+	color: white;text-align:center;}
 #copyright{padding: 20px;}
 #contactContainer input{
 	width: 100%;
