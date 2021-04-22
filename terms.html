@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="styles/section_main.css">
     <link rel="stylesheet" type="text/css" href="styles/form.css">
     <link rel="stylesheet" type="text/css" href="styles/product.css">
+    <link rel="stylesheet" type="text/css" href="styles/pagemap_styles.css">
     <style>
         section p{padding: 8px 15px;display: block;}
         section h3{padding: 10px;font-size: 1.1em;color: #777777 !important;}
@@ -310,6 +311,12 @@
                 });
             }
         });
+    </script>
+    <canvas id="map"></canvas>
+
+    <script src="pagemap.min.js"></script>
+    <script>
+        pagemap(document.querySelector('#map'));
     </script>
 </body>
 
