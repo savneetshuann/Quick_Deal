@@ -102,12 +102,12 @@ body{margin: 0;padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
 #top_header_nav >ul >li a{
     display: inline-block;
     text-decoration: none;
-    color: #bdd5ff;
+    color: #16181a;
     font-size: .6em;
     padding: 4px 7px;
 }
 #top_header_nav ul li a:hover{
-    color: #ffffff;
+    color: #0c0c0c;
 }
 
 
@@ -144,6 +144,7 @@ body{margin: 0;padding: 0;font-family: Verdana, Geneva, Tahoma, sans-serif;}
 #top_nav>ul>li>a:visited{color: #4e4e4e;}
 
 #top_nav> ul>li>a:hover{
+    background-color: #747a80;
     color: #f3eb11;
     cursor: pointer;
 }
