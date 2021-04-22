@@ -34,9 +34,15 @@
             -webkit-box-shadow: 10px 10px 5px #888;
             box-shadow: 10px 10px 5px #888;
         }
-        h1{
+
+        #h1 {            
+            position: absolute;
+        }
+        #women
+        {
             margin-left: 3%;
             margin-top: 5px;
+            height:50px
         }
     </style>
 
@@ -233,7 +239,10 @@
             </ul>
         </nav>
         <main id="main" class="clearfix">
-            <h1 id=h1>Women's Fashion</h1>
+            <div id="women">
+                <h1 id=h1>Women's Fashion</h1>
+            </div>
+
             <div class="gallery">
                 <a target="_blank" href="img_5terre.jpg">
                     <img src="images/tv.png" alt="Cinque Terre" width="600" height="400">
@@ -331,6 +340,7 @@
         </footer>
     </div>
     <!-- toggle box shadow effect -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -347,13 +357,11 @@
                     $(this).css('opacity', '1');
                 });
             });
-            $("#h1").animate(
-                {
-                    fontSize: ["650%", "easeInExpo"],
-                    opacity: [1, "swing"],
-                    left: ["+=275", "easeOutExpo"]
-                }, 2000
-            );
+
+        });
+        // animation on header
+        $(window).ready(function () {
+            $("#h1").animate({ left: '550px' });
         });
     </script>
 
