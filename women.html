@@ -335,6 +335,12 @@
             //         $(this).find(".gallery").last().remove();
             $(".gallery").hover(function () {
                 $(this).toggleClass('classWithShadow');
+                $('div.gallery img ').mouseover(function () {
+                    $(this).css('opacity', '.5');
+
+                }).mouseout(function () {
+                    $(this).css('opacity', '1');
+                });
             });
 
 

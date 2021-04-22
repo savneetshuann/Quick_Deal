@@ -13,7 +13,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- bxSlider CSS file -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+    <!-- zoom plugin -->
+    <link rel="stylesheet" href="css/jquery.jqZoom.css" />
     <title>Product details</title>
 
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
@@ -240,10 +241,14 @@
 
 
                 <div id="product_images">
-                     <figure >
-                        <img src="https://rukminim1.flixcart.com/image/416/416/ka5oia80/television/5/d/e/samsung-ua50tue60akxxl-original-imafrs6zp3afqgjf.jpeg?q=70" alt="offers">
-                        
-                    </figure> 
+                    <div class="zoom-box">
+
+                        <figure>
+                            <img src="https://rukminim1.flixcart.com/image/416/416/ka5oia80/television/5/d/e/samsung-ua50tue60akxxl-original-imafrs6zp3afqgjf.jpeg?q=70"
+                                alt="offers">
+
+                        </figure>
+                    </div>
                     <!-- <div class="bxslider">
                         <div> <img
                                 src="https://rukminim1.flixcart.com/image/416/416/ka5oia80/television/5/d/e/samsung-ua50tue60akxxl-original-imafrs6zp3afqgjf.jpeg?q=70"
@@ -308,16 +313,17 @@
                                 <td>Active HDR (HDR10, HLG)</td>
                             </tr>
                             <tr>
-                                <td>Resolution Upscaler</td>
-                                <td>4K Upscaler</td>
+                                <td>Available Quantity</td>
+                                <td>3</td>
                             </tr>
+                           
                         </table>
                     </div>
                 </div>
             </section>
             <section class="section">
                 <header>
-                    <h2>Other Similar Products</h2>
+                    <h2>Other Similar Products you might interested in</h2>
                 </header>
                 <div class="items_div clearfix">
 
@@ -392,10 +398,17 @@
             </div>
 
             <div class="title" id="copyright">
-                <p>&copy;2020 QuickDeal.com</p>
+                <p>&copy;2021 QuickDeal.com</p>
             </div>
         </footer>
     </div>
+    <script src="/path/to/cdn/jquery.min.js"></script>
+
+
+
+
+
+
     <!-- jQuery library (served from Google) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- bxSlider Javascript file -->
@@ -403,21 +416,8 @@
     <!-- bxSlider CSS file -->
     <link href="/lib/jquery.bxslider.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- bxSlider Javascript file -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(function () {
-                $('.bxslider').bxSlider({
-                    mode: 'fade',
-                    captions: true,
-                    slideWidth: 400
-                });
-            });
 
-        });
+
 
 
     </script>

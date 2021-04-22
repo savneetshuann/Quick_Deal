@@ -34,6 +34,18 @@
             -webkit-box-shadow: 10px 10px 5px #888;
             box-shadow: 10px 10px 5px #888;
         }
+
+        .hover01 figure img {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        .hover01 figure:hover img {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+        }
     </style>
 
 </head>
@@ -346,6 +358,12 @@
             //         $(this).find(".gallery").last().remove();
             $(".gallery").hover(function () {
                 $(this).toggleClass('classWithShadow');
+                $('div.gallery img ').mouseover(function () {
+                    $(this).css('opacity', '.5');
+
+                }).mouseout(function () {
+                    $(this).css('opacity', '1');
+                });
             });
 
 
