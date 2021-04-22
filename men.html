@@ -371,16 +371,15 @@
                 topNav.style.width = "0%";
                 topNav.style.padding = "0px";
             });
-
-            let items = document.querySelectorAll(".item");
+			let items = document.querySelectorAll(".gallery");
 
 
             for (let i = 0; i < items.length; i++) {
                 items[i].onclick = function (e) {
                     e.preventDefault();
-                    title = this.querySelector(".item_title").innerHTML;
+                    title = this.querySelectorAll(".desc")[0].innerHTML;
                     imagelink = this.querySelector("img").src;
-                    price = this.querySelector(".item_price").innerText;
+                    price = this.querySelectorAll(".desc")[1].innerText;
 
                     setProductCookie(title, imagelink, price);
                     window.location.href = "product_details.html";
