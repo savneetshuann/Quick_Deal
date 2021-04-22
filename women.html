@@ -34,6 +34,10 @@
             -webkit-box-shadow: 10px 10px 5px #888;
             box-shadow: 10px 10px 5px #888;
         }
+        h1{
+            margin-left: 3%;
+            margin-top: 5px;
+        }
     </style>
 
 </head>
@@ -229,6 +233,7 @@
             </ul>
         </nav>
         <main id="main" class="clearfix">
+            <h1 id=h1>Women's Fashion</h1>
             <div class="gallery">
                 <a target="_blank" href="img_5terre.jpg">
                     <img src="images/tv.png" alt="Cinque Terre" width="600" height="400">
@@ -342,6 +347,13 @@
                     $(this).css('opacity', '1');
                 });
             });
+            $("#h1").animate(
+                {
+                    fontSize: ["650%", "easeInExpo"],
+                    opacity: [1, "swing"],
+                    left: ["+=275", "easeOutExpo"]
+                }, 2000
+            );
         });
     </script>
 
