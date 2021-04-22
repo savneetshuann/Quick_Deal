@@ -83,7 +83,7 @@
 /* ------- footer -------*/
 
 #footer {
-	background-color: #0046be
+	background-color: #5ab9b9
 
 }
 
@@ -102,7 +102,7 @@
 	font-weight: bold;
 	transition: .3s;
 }
-#footer_nav a:hover{background-color: darkgrey;color:white !important;}
+#footer_nav a:hover{background-color: rgb(95, 89, 89);color:white !important;}
 #footer_social a:hover{transform: scale(1.2);}
 #footer a:link, #footer a:visited, .form_container a:link, #footer a:visited{
 	font-size: .8em;
