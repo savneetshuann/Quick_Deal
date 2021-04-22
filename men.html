@@ -28,6 +28,12 @@
             padding: 15px;
             text-align: center;
         }
+
+        .classWithShadow {
+            -moz-box-shadow: 10px 10px 5px #888;
+            -webkit-box-shadow: 10px 10px 5px #888;
+            box-shadow: 10px 10px 5px #888;
+        }
     </style>
 
 </head>
@@ -105,8 +111,8 @@
                             <li>
                                 <h5 class="dropdown_title"> </h5>
                             </li>
-                            <li><a href="#">Men's Cloths</a></li>
-                            <li><a href="#">Women's Cloths</a></li>
+                            <li><a href="men.html">Men</a></li>
+                            <li><a href="women.html">Women</a></li>
                             <li><a href="#">Kids Cloths</a></li>
                             <li class="dropdown_title">More Catagories</li>
                             <li><a href="#">Books</a></li>
@@ -213,9 +219,6 @@
                     <a href="#" class="dropbtn">Women</a>
                 </li>
 
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Babies & Kids</a>
-                </li>
 
                 <li>
                     <a href="#">Offers & Deals</a>
@@ -334,6 +337,20 @@
         );
 
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $(".gallery").hover(function () {
+            //     $(this).css('box-shadow', '10px 10px 5px #888');
+            // }, function() {
+            //         $(this).find(".gallery").last().remove();
+            $(".gallery").hover(function () {
+                $(this).toggleClass('classWithShadow');
+            });
+
+
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
@@ -371,7 +388,7 @@
                 topNav.style.width = "0%";
                 topNav.style.padding = "0px";
             });
-			let items = document.querySelectorAll(".gallery");
+            let items = document.querySelectorAll(".gallery");
 
 
             for (let i = 0; i < items.length; i++) {

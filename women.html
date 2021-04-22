@@ -28,6 +28,12 @@
             padding: 15px;
             text-align: center;
         }
+
+        .classWithShadow {
+            -moz-box-shadow: 10px 10px 5px #888;
+            -webkit-box-shadow: 10px 10px 5px #888;
+            box-shadow: 10px 10px 5px #888;
+        }
     </style>
 
 </head>
@@ -105,8 +111,8 @@
                             <li>
                                 <h5 class="dropdown_title"> </h5>
                             </li>
-                            <li><a href="#">Men's Cloths</a></li>
-                            <li><a href="#">Women's Cloths</a></li>
+                            <li><a href="men.html">Men</a></li>
+                            <li><a href="women.html">Women</a></li>
                             <li><a href="#">Kids Cloths</a></li>
                             <li class="dropdown_title">More Catagories</li>
                             <li><a href="#">Books</a></li>
@@ -319,42 +325,26 @@
             </div>
         </footer>
     </div>
-    <!-- plugin -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init(
-            {
-                duration: 1000, // values from 0 to 3000, with step 50ms
-                easing: 'ease', // default easing for AOS animations
-            }
-        );
-
-    </script>
-
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/jquery.timer.js"></script>
-    <script src="panning-slideshow.js"></script>
-    <!-- script for image animations -->
+    <!-- toggle box shadow effect -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("#slideshow > div:gt(0)").hide();
+            // $(".gallery").hover(function () {
+            //     $(this).css('box-shadow', '10px 10px 5px #888');
+            // }, function() {
+            //         $(this).find(".gallery").last().remove();
+            $(".gallery").hover(function () {
+                $(this).toggleClass('classWithShadow');
+            });
 
-            setInterval(function () {
-                $('#slideshow > div:first')
-                    .fadeOut(1000)
-                    .next()
-                    .fadeIn(1000)
-                    .end()
-                    .appendTo('#slideshow');
-            }, 3000);
+
         });
+    </script>
+
+
+
+    <!-- plugin -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     </script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
